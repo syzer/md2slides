@@ -1,0 +1,14 @@
+{
+  "name": "md2slides",
+  "version": "1.0.0",
+  "description": "create html slides from markdown, based on remark.js",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "syzer <syzer@users.noreply.github.com> (https://github.com/syzer/JS-Spark)",
+  "license": "ISC",
+  "bin": {
+    "md2slides": "bin/index.js"
+  }
+}
