@@ -2,17 +2,24 @@ WAT
 ===
 
 Jet another .md to .html slides converter
-basel on [https://github.com/gnab/remark](https://github.com/gnab/remark)
+based on [https://github.com/gnab/remark](https://github.com/gnab/remark)
 
 
 HOW
 ===
 
+installation
+------------
 `npm i -g md2slides`
+
+Usage
+-----
 `md2slides test/fixture.md > test.html`
+will read your md file and convert it to html
 
 
-make MD FILE CONTAINING
+Example MD
+==========
 
 # Title
 
@@ -39,10 +46,17 @@ function add(a, b) {
 $watch(watchExpression, listener, [objectEquality]);
 ```
 
+# test ruby
+
+```ruby
+puts "What's up?"
+print "world"
+```
+
 
 Documentation
 =============
-https://github.com/gnab/remark/wiki/Configuration#highlighting
+[remark](https://github.com/gnab/remark/wiki/Configuration#highlighting)
 
 TODO
 ====
