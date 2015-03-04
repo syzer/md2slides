@@ -17,6 +17,10 @@ Usage
 `md2slides test/fixture.md > test.html`
 will read your md file and convert it to html
 
+WHY
+===
+It makes very nice looking slides.
+And makes them really quickly.
 
 Example MD
 ==========
