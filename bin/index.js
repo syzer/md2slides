@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var file;
+var file, fileOut;
 
 if (process.argv.length <= 2) {
     console.log('md2slides, usage:');
@@ -9,8 +9,9 @@ if (process.argv.length <= 2) {
     return;
 } else {
     file = process.argv[2];
+    fileOut = process.argv[3];
 }
 
 var app = require('../app')();
-app.init(file);
+app.init(file, fileOut);
 app.run();
