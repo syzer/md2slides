@@ -8,14 +8,24 @@ based on [https://github.com/gnab/remark](https://github.com/gnab/remark)
 HOW
 ===
 
-installation
+Installation
 ------------
+Clone this repository with:
+`git clone git@github.com/syzer/md2slides && cd $_`
+
+Install as command line:
 `npm i -g md2slides`
+One may run this command with sudo
 
 Usage
 -----
 `md2slides test/fixture.md > test.html`
+
+or
+
+`md2slides file.md output.html`
 will read your md file and convert it to html
+
 
 WHY
 ===
@@ -69,3 +79,4 @@ Documentation
 TODO
 ====
 [X] ```javascript => ```js'
+[ ] support for math equations
