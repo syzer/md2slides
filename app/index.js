@@ -4,7 +4,7 @@
 module.exports = function() {
     'use strict';
 
-    var fs, footer, header, remark, md, outputFile;
+    var fs, footer, header, remark, md, outputFile, remarkJs;
 
     return {
         init: function(markdownFile, htmlFile) {
@@ -12,14 +12,14 @@ module.exports = function() {
             footer = fs.readFileSync(__dirname + '/footer.html', 'utf8');
             header = fs.readFileSync(__dirname + '/header.html', 'utf8');
             remark = fs.readFileSync(__dirname + '/remark.html', 'utf8');
+            remarkJs = fs.readFileSync(__dirname + '/remark-latest.min.js', 'utf8');
             md = fs.readFileSync(markdownFile);
             outputFile = htmlFile;
         },
         run: function() {
-            if (!outputFile) {
-                return console.log(header + md + remark + footer);
-            }
-            fs.writeFileSync(outputFile, header + md + remark + footer)
+            fs.writeFileSync(outputFile, header + md + remark + footer);
+            //TODO test + real path
+            fs.writeFileSync('./remark-latest.min.js', remarkJs);
         }
     }
 };

@@ -2,10 +2,10 @@
 
 var file, fileOut;
 
-if (process.argv.length <= 2) {
+if (process.argv.length <= 3) {
     console.log('md2slides, usage:');
     console.log('-----------------');
-    console.log('md2slides inputFile.md > outputFile.html');
+    console.log('md2slides inputFile.md outputFile.html');
     return;
 } else {
     file = process.argv[2];

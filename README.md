@@ -19,10 +19,6 @@ One may run this command with sudo
 
 Usage
 -----
-`md2slides test/fixture.md > test.html`
-
-or
-
 `md2slides file.md output.html`
 will read your md file and convert it to html
 
