@@ -11,11 +11,11 @@ module.exports = function() {
             fs = require('fs');
             footer = fs.readFileSync(__dirname + '/footer.html', 'utf8');
             header = fs.readFileSync(__dirname + '/header.html', 'utf8');
-            //remark = fs.readFileSync(__dirname + '/remark.html', 'utf8');
+            remark = fs.readFileSync(__dirname + '/remark.html', 'utf8');
             md = fs.readFileSync(markdownFile);
         },
         run: function() {
-            console.log(header + md + footer);
+            console.log(header + md + remark + footer);
         }
     }
 };
