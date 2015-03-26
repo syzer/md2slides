@@ -57,6 +57,10 @@ puts "What's up?"
 print "world"
 ```
 
+# Development
+run those commands to test:
+`npm i --dev`
+`npm test`
 
 Documentation
 =============
@@ -64,4 +68,4 @@ Documentation
 
 TODO
 ====
-[ ] ```javascript => ```js'
+[X] ```javascript => ```js'
