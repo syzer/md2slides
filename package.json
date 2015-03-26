@@ -1,10 +1,10 @@
 {
   "name": "md2slides",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "create html slides from markdown, based on remark.js",
   "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "syzer <syzer@users.noreply.github.com> (https://github.com/syzer/JS-Spark)",
   "license": "ISC",
@@ -24,5 +24,9 @@
     "md2slides",
     "node markdown",
     "node md"
-  ]
+  ],
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "mocha": "^2.2.1"
+  }
 }
