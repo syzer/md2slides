@@ -19,7 +19,7 @@ Usage
 -----
 `md2slides file.md output.html`
 Will read your `md` file and convert it to `html`
-It also saves a `remark*.js` file in the same directory as `html`.
+It also saves a `remark*.js` file in the same directory as `html.
 
 WHY
 ===
