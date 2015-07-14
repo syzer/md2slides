@@ -1,6 +1,6 @@
 {
   "name": "md2slides",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "create html slides from markdown, based on remark.js",
   "main": "app/index.js",
   "scripts": {
@@ -28,5 +28,8 @@
   "devDependencies": {
     "chai": "^2.1.2",
     "mocha": "^2.2.1"
+  },
+  "dependencies": {
+    "yargs": "^3.15.0"
   }
 }
