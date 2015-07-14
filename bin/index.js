@@ -1,17 +1,13 @@
 #!/usr/bin/env node
 
-var file, fileOut;
-
-if (process.argv.length <= 3) {
-    console.log('md2slides, usage:');
-    console.log('-----------------');
-    console.log('md2slides inputFile.md outputFile.html');
-    return;
-} else {
-    file = process.argv[2];
-    fileOut = process.argv[3];
-}
+var argv = require('yargs')
+    .usage('md2slides,\n Usage: md2slides inputFile.md outputSlidesFile.html')
+    .demand(2)
+    .help('h')
+    .alias('h', 'help')
+    .epilog('Remember to copy also the (created) remark*.js file')
+    .argv;
 
 var app = require('../app')();
-app.init(file, fileOut);
+app.init(argv._[0], argv._[1]);
 app.run();
