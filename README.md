@@ -1,8 +1,9 @@
 WAT
 ===
 
-Jet another .md to .html slides converter
+Very handy markdown (.md) to html slides converter
 based on [https://github.com/gnab/remark](https://github.com/gnab/remark)
+Works from command line, and also with unix pipeline.
 
 
 HOW
@@ -10,18 +11,15 @@ HOW
 
 Installation
 ------------
-Clone this repository with:
-`git clone git@github.com/syzer/md2slides && cd $_`
-
-Install as command line:
+Install as command line tool:
 `npm i -g md2slides`
-One may run this command with sudo
+One may run this command with `sudo`
 
 Usage
 -----
 `md2slides file.md output.html`
-will read your md file and convert it to html
-
+Will read your `md` file and convert it to `html`
+It also saves a `remark*.js` file in the same directory as `html`.
 
 WHY
 ===
@@ -65,8 +63,14 @@ print "world"
 
 # Development
 run those commands to test:
-`npm i --dev`
-`npm test`
+Clone this repository with:
+
+```bash
+git clone git@github.com/syzer/md2slides
+cd md2lides
+npm i --dev
+npm test
+```
 
 Documentation
 =============
