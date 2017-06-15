@@ -1,6 +1,8 @@
 WAT
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/syzer/md2slides.svg)](https://greenkeeper.io/)
+
 Very handy markdown (.md) to html slides converter
 based on [https://github.com/gnab/remark](https://github.com/gnab/remark)
 Works from command line, and also with unix pipeline.
