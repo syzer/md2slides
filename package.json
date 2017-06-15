@@ -26,10 +26,10 @@
     "node md"
   ],
   "devDependencies": {
-    "chai": "^2.1.2",
-    "mocha": "^2.2.1"
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   },
   "dependencies": {
-    "yargs": "^3.15.0"
+    "yargs": "^8.0.2"
   }
 }
